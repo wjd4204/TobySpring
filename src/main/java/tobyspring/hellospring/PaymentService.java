@@ -28,6 +28,7 @@ public class PaymentService {
         ExRateData data = mapper.readValue(response, ExRateData.class);
         BigDecimal exRate = data.rates().get("KRW");
 
+
         // 금액 계산
         BigDecimal convertedAmount = foreignCurrencyAmount.multiply(exRate);
 
