@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 public class PaymentService {
 
-    ExRateProvider exRateProvider;
+    private final ExRateProvider exRateProvider;
 
     public PaymentService(ExRateProvider exRateProvider) {
         this.exRateProvider = exRateProvider;
